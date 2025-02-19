@@ -1,0 +1,24 @@
+.upload-container {
+    text-align: center;
+    padding: 50px;
+    background: #16213e;
+    color: white;
+    height: 100vh;
+}
+
+input {
+    margin: 20px;
+}
+
+button {
+    background: #e94560;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0f3460;
+}
