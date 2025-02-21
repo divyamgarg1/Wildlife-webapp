@@ -1,79 +1,86 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: white;
-    font-family: "Poppins", sans-serif;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .logo {
-    font-size: 22px;
-    font-weight: bold;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.auth-links {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.login-btn, .signup-btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.login-btn {
+  background: white;
+  color: #2a5298;
+}
+
+.signup-btn {
+  background: #ffd700;
+  color: #2a5298;
+}
+
+.login-btn:hover {
+  background: #f0f0f0;
+}
+
+.signup-btn:hover {
+  background: #ffcc00;
+}
+
+@media (max-width: 768px) {
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li {
-    display: inline;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #ffd700;
-  }
-  
-  .auth-links {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .login-btn, .signup-btn {
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-  
-  .login-btn {
-    background: white;
-    color: #2a5298;
-  }
-  
-  .signup-btn {
-    background: #ffd700;
-    color: #2a5298;
-  }
-  
-  .login-btn:hover {
-    background: #f0f0f0;
-  }
-  
-  .signup-btn:hover {
-    background: #ffcc00;
-  }
-  
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
-  
-    .auth-links {
       flex-direction: column;
-    }
+      gap: 10px;
   }
-  
+
+  .auth-links {
+      flex-direction: column;
+  }
+}
