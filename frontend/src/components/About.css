@@ -1,19 +1,35 @@
 .about-container {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    padding: 40px 20px;
     text-align: center;
-    padding: 40px;
-    background: #0f3460;
-    color: #fff;
-    height: 100vh;
 }
 
-h1 {
+.about-header {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.about-header h1 {
     font-size: 2.5rem;
-    margin-bottom: 15px;
+    font-weight: 700;
 }
 
-p {
-    font-size: 1.2rem;
+.about-content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 30px auto;
+    font-size: 1.1rem;
+    color: #555;
     line-height: 1.6;
+}
+
+.about-highlight {
+    background: #ffd700;
+    color: #1e3c72;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600;
 }

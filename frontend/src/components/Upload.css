@@ -1,70 +1,114 @@
+/* Global background to match theme */
+body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Upload container styling */
+/* .upload-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+} */
+
 .upload-container {
-    max-width: 500px;
-    margin: 50px auto;
+  max-width: 500px;
+  margin: 80px auto 50px; /* Add top margin to push below navbar */
+  padding: 25px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.upload-container:hover {
+  transform: scale(1.02);
+}
+
+/* Heading styles */
+.upload-container h2 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Subtext */
+.upload-container p {
+  color: #ecf0f1;
+  font-size: 14px;
+}
+
+/* File upload box */
+.upload-box {
+  position: relative;
+  margin: 20px 0;
+}
+
+/* Hide default file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Custom file upload button */
+.file-label {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #1e3c72;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.file-label:hover {
+  background-color: #e6c200;
+  transform: scale(1.05);
+}
+
+/* Preview image */
+.preview {
+  margin: 20px 0;
+}
+
+.preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Upload button */
+.upload-btn {
+  padding: 12px 24px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.upload-btn:hover {
+  background-color: #219150;
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .upload-container {
+    width: 90%;
     padding: 20px;
-    text-align: center;
-    background: #f9f9f9;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: "Poppins", sans-serif;
   }
-  
-  .upload-container h2 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-  }
-  
-  .upload-container p {
-    color: #7f8c8d;
-  }
-  
-  .upload-box {
-    position: relative;
-    margin: 20px 0;
-  }
-  
-  input[type="file"] {
-    display: none;
-  }
-  
-  .file-label {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s ease;
-  }
-  
-  .file-label:hover {
-    background-color: #2980b9;
-  }
-  
-  .preview {
-    margin: 20px 0;
-  }
-  
-  .preview img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .upload-btn {
-    padding: 10px 20px;
-    background-color: #27ae60;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s ease;
-  }
-  
-  .upload-btn:hover {
-    background-color: #219150;
-  }
-  
+}

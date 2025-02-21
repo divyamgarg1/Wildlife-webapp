@@ -1,23 +1,28 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import About from "./components/About";
 import Upload from "./components/Upload";
+import Auth from "./components/Auth";
+import About from "./components/About";
 import Analytics from "./components/Analytics";
 import Team from "./components/Team";
 
-function App() {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/upload" element={<Upload />} />
-                <Route path="/analytics" element={<Analytics />} />
-                <Route path="/team" element={<Team />} />
-            </Routes>
-        </Router>
-    );
-}
+const App = () => {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/upload" element={<Upload />} />
+        <Route path="/login" element={<Auth />} />
+        <Route path="/signup" element={<Auth />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/analytics" element={<Analytics />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;

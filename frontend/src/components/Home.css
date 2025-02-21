@@ -1,37 +1,90 @@
+/* Home Page Styles */
 .home-container {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+  }
+  
+  .hero-section {
+    background: url("") center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 50px;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-    color: #fff;
-    height: 100vh;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.2rem;
-    opacity: 0.8;
-}
-
-.home-buttons {
-    margin-top: 30px;
-}
-
-.btn {
-    text-decoration: none;
     color: white;
-    background: #e94560;
-    padding: 10px 20px;
-    margin: 10px;
+  }
+  
+  .hero-text {
+    max-width: 700px;
+    padding: 20px;
+    background: rgba(203, 197, 197, 0.6);
+    border-radius: 10px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-}
-
-.btn:hover {
-    background: #0f3460;
-}
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #45a049;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .feature {
+    width: 30%;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+  }
+  
+  .about-platform {
+    color: aliceblue;
+    text-align: center;
+    padding: 50px 10%;
+  }
+  
+  .about-platform h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .about-platform p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  

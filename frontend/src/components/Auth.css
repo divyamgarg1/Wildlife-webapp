@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  font-family: 'Poppins', sans-serif;
+}
+
+.auth-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 350px;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.auth-box:hover {
+  transform: scale(1.03);
+}
+
+.auth-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.auth-box input {
+  width: 93%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.auth-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.auth-box input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #ffd700;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 14px;
+  background: #ffd700;
+  color: #1e3c72;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  align-items: center;
+}
+
+.auth-box button:hover {
+  background: #ffcc00;
+}
+
+.toggle-text {
+  margin-top: 15px;
+  color: #ffd700;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.toggle-text:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}

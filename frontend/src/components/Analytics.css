@@ -1,7 +1,49 @@
 .analytics-container {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    padding: 40px 20px;
     text-align: center;
-    padding: 50px;
-    background: #1a1a2e;
+}
+
+.analytics-header {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
     color: white;
-    height: 100vh;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.analytics-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.analytics-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.analytics-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.analytics-card:hover {
+    transform: translateY(-10px);
+}
+
+.analytics-card h2 {
+    color: #1e3c72;
+    font-size: 1.5rem;
+}
+
+.analytics-card p {
+    font-size: 1rem;
+    color: #555;
 }
